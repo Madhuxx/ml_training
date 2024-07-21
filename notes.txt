@@ -1,0 +1,5 @@
+Types of ML 
+Supervised 	  - Inputs and Outputs(Label)
+Un supervised - Only inputs (clustering, Dimensionality Reduction, Anamoly detection, Association Rule Learning)
+Semi-Supervised -Inputs and partial outputs(labels)
+Reinforced     - No inputs and no outputs
