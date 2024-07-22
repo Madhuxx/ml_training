@@ -9,5 +9,12 @@ Types of ML
 4. Reinforced - No inputs and no outputs provided (Algorithm has to learn from scratch)
 
 ----------------------------------------------------------------------
-Batch learning - 
+Offline learning - Train the model on an offline machine and deploy the trained model in production environment. When new data comes, model will go offline and learn and come back online
+
+Online learning - The model is trained and deployed. Now when new data comes, it does prediction as well as getting trained
+
+
+Learning rate: a parameter that controls how quickly an algorithm updates the values of a parameter estimate. It's also known as a tuning parameter in an optimization algorithm, or as step size. The learning rate is a fundamental concept that plays an important role in training models and optimizing their performance.  The learning rate is typically set to a small positive value between 0.0 and 1.0. It's denoted by the symbol α. 
+
+out of core learning: algorithms designed to handle data that exceeds the capacity of a machine's primary memory (RAM). These algorithms work by reading small mini-batches of data from the disk, processing them, and then discarding them to free up memory for the next batch.
 
