@@ -16,5 +16,13 @@ Online learning - The model is trained and deployed. Now when new data comes, it
 
 Learning rate: a parameter that controls how quickly an algorithm updates the values of a parameter estimate. It's also known as a tuning parameter in an optimization algorithm, or as step size. The learning rate is a fundamental concept that plays an important role in training models and optimizing their performance.  The learning rate is typically set to a small positive value between 0.0 and 1.0. It's denoted by the symbol α. 
 
-out of core learning: algorithms designed to handle data that exceeds the capacity of a machine's primary memory (RAM). These algorithms work by reading small mini-batches of data from the disk, processing them, and then discarding them to free up memory for the next batch.
+out of core learning: algorithms designed to handle data that exceeds the capacity of a machine's primary memory (RAM). These algorithms work by reading small mini-batches of data from the disk, processing them, and then discarding them to free up memory for the next batch.SGDRegression (Stochastic Gradient Descent) has partial_fit() along with fit() method
+
+------------------------------------------------------------------------
+Instance based learning - systems that learn the training examples by heart and then generalizes to new instances based on some similarity measure - K Nearest Neighbor (KNN)
+
+Model based learning - In model-based learning, the training data is used to create a model that can be generalized to new data. The model is typically created using statistical algorithms such as linear regression, logistic regression, decision trees, and neural networks. These algorithms use the training data to create a mathematical model that can be used to predict outcomes.
+
+---------------------------------------------------------------------------
+
 
