@@ -25,4 +25,103 @@ Model based learning - In model-based learning, the training data is used to cre
 
 ---------------------------------------------------------------------------
 
+Sampling Noise
+
+Sampling Bias
+
+---------------------------------------------------------------------------
+
+Machine learning - We need to train model with dataset
+
+Deep Learning - No need to train model with dataset.. it prepares its own features
+	image classification tasks	
+-------------------------------------------------------------------------
+MLDLC:
+1. Problem Statement: What is that we are trying to solve, who are the customers, Team size, how will be the end product look like, supervised/un supervised model??, offline/online mode?? what algorithms??,data sources..?
+2. Gathering data - csv, api, web scraping, database->etl->datawarehouse etc.,
+3. Data Preprocessing - Clean Dirty data (missing values, outliers, duplicates, scaling data, missing structure, noisy data) 
+4. EDA - Study the relationship b/w inputs and outputs, data visualization, univariant/bi-variant/multi-variant analysis, outlier detection, make imbalance dataset to balance dataset
+5.Feature Engineering and Selection - create new cols instead of multiple cols
+6. Model training , evaluation, selection- Bring in multiple algorithms and train on the data. Once you get the model, we have to tune it (hyper-parameter tuning). Sometimes merge multiple models and develop hybrid models .. this is called ensemble learning (bagging/boosting/stacking/cascading)
+7. Model deployment - prepare a binary file(pickle)-> convert to API and deploy to cloud (Heroku/Azure etc.,)
+8. Testing- A/B testing 
+9.Optimize - Model/data maintenance , load balancing, retrain, rotting data
+---------------------------------------------------------------------------
+Tensors: N-Dimensional array
+Its a data structure used to store numerical data
+0D tensor - a number - scalar
+1D tensor- a list of numbers- vector
+2D tensor- list of numbers - matrix
+----------------------------------------------------------------------------
+conda create --name ramavm
+conda activate ramavm
+conda install -c anaconda jupyter
+conda install numpy
+!pip install numpy ( install from notebook itself)
+Ctrl +C -------- to abort
+conda deactivate --------- to deactivate vm and move to base
+conda remove --name ramavm --all
+-----------------------------------------------------------------------------
+go to Kaggle portal, select a dataset and open new notebook from that page
+-----------------------------------------------------------------------------
+CSV functions:
+1. Sep Parameter
+df=pd.read_csv('file.csv', sep='\t')
+2.CSV file without headers
+df=pd.read_csv('file.csv', sep='\t', names=['emp_name','emp_sal'])
+3.Mark a column as Index in Dataframe
+df=pd.read_csv('file.csv', index='emp_id')
+4.Mark first row as header
+df=pd.read_csv('file.csv',header=1)
+5.Load only few cols from a csv
+df=pd.read_csv('file.csv', use_cols=['col1','col2','col3')
+6.Filter rows in CSV
+df=pd.read_csv('file.csv', skiprows=[0,5])
+7.Load only n- number of rows
+df=pd.read_csv('file.csv', nrows=100)
+8.Declare the encoding
+df=pd.read_csv('file.csv', encoding='latin-1)
+9.To skip bad lines
+df=pd.read_csv('file.csv', error_bad_lines=False)
+10. Handling Data types
+df=pd.read_csv('file.csv', dtype={'col1':int})
+11. Handling dates - In pandas, string is shown as object
+df=pd.read_csv('file.csv', parse_dates=[date_col])
+12.Change column values to a diff value
+def rename(name):
+	if name == "Madhu":
+		return "Rama"
+	else 
+		return name
+df=pd.read_csv('file.csv', )
+df=pd.read_csv('file.csv', converters={'col_name':rename})
+
+13. NaN = Missing values
+df=pd.read_csv('file.csv', na_values=['Male'])-- it means wherever Male is present, it is replaced with NaN
+
+14. Loading a dataset in chunks
+dfs=pd.read_csv('file.csv', chunksize=5000)
+for chunk in dfs
+	print (chunks.shape)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
