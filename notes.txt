@@ -55,6 +55,7 @@ Its a data structure used to store numerical data
 ----------------------------------------------------------------------------
 conda create --name ramavm
 conda activate ramavm
+conda jupyter notebook
 conda install -c anaconda jupyter
 conda install numpy
 !pip install numpy ( install from notebook itself)
@@ -103,6 +104,18 @@ df=pd.read_csv('file.csv', na_values=['Male'])-- it means wherever Male is prese
 dfs=pd.read_csv('file.csv', chunksize=5000)
 for chunk in dfs
 	print (chunks.shape)
+	
+=========================================================================================================
+df=pd.read_json('file.json')
+
+=========================================================================================================
+!pip install mysql.connector
+import mysql.connector
+conn=mysql.connector.connect(host='localhost',user='sa',password='', database='my_db')
+df=pd.read_sql_query("select * from table", conn)
+=========================================================================================================
+
+
 
 
 
