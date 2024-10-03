@@ -1,3 +1,6 @@
+kancherla.madhu@gmail.com
+Jyo@2024
+==========================================================================
 Types of ML 
 ============
 1. Supervised 	  - Inputs and Outputs(Label) provided (Regression - numerical :: Classification-categorical )
@@ -114,6 +117,33 @@ import mysql.connector
 conn=mysql.connector.connect(host='localhost',user='sa',password='', database='my_db')
 df=pd.read_sql_query("select * from table", conn)
 =========================================================================================================
+
+API based loading to dataframe
+https://www.themoviedb.org/
+https://developer.themoviedb.org/reference/movie-top-rated-list
+
+
+
+
+========================================================================================================
+df.shape
+df.head() - return top 5 rows
+df.sample(5) - return random 5 rows
+df.info() - information abt all columns
+df.isnull().sum() - no.of missing Values in each column
+df.describe() - provides mathematical summary (mean/median/count/stdmin/max)of numerical columns
+df.duplicated().sum() - to identify the duplicate rows
+df.corr() - to identify the impact of all columns on other columns (-1 to +1)
+df.corr()['col_name'] - to identify the impact of this column on other columns (-1 to +1)
+====================================================================================================
+UNI-VARIATE ANALYSIS - to analyse one column at a time
+
+
+
+
+
+
+
 
 
 
