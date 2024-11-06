@@ -136,7 +136,8 @@ df.duplicated().sum() - to identify the duplicate rows
 df.corr() - to identify the impact of all columns on other columns (-1 to +1)
 df.corr()['col_name'] - to identify the impact of this column on other columns (-1 to +1)
 ====================================================================================================
-UNI-VARIATE ANALYSIS - to analyse one column at a time
+UNI-VARIATE ANALYSIS - to analyse one column at a time independently
+
 
 
 
